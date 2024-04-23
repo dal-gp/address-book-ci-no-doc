@@ -16,6 +16,12 @@ public class ContactManager {
                 .toList();
     }
 
+    /**
+     * Method to determine if the contact searched for is presetn
+     * @param contact - A contact object
+     * @param query - string representation of the query used to search for a contact
+     * @return - true if contact is found otherwise false
+     */
     private boolean isContactMatched(Contact contact, String query) {
         if (query == null || query.isEmpty()) return true;
         query = query.toLowerCase();
